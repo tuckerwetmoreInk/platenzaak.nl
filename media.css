@@ -1,0 +1,59 @@
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            overflow: scroll;
+        }
+        .carousel .arrow {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            color: #333;
+        }
+        .carousel .products {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .product {
+            flex: 0 0 300px;
+            text-align: center;
+            margin: 0 10px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 90%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product .price {
+            font-size: 18px;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        .product .pre-order {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .product .see-options {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .product .see-options:hover {
+            background-color: #c0392b;
+        }

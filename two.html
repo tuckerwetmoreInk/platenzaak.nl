@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platenzaak.nl</title>
+    <link rel="stylesheet" href="media.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #f4f4f4;
+    color: red;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.award-image {
+    max-width: 20%;
+    height: auto;
+    align-items: end;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payment-methods img {
+    height: 55px;
+    width: auto;
+    
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media img {
+    max-width: 30px;
+    margin: 0 5px;
+}
+
+.trustpilot-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 2px solid #800000;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .payment-methods {
+        flex-wrap: wrap;
+    }
+
+    .product-item {
+        max-width: 100%;
+    }
+}
+#contact{
+    text-align: left;
+}
+
+.media{
+    display: flex;
+    gap: 5px;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px #000;
+    justify-content: space-between;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><div class="logo">💿 PLATENZAAK.NL</div></a>
+        <nav>
+            <ul>
+                <li><a href="about.html">All about vinyl</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section id="product">
+        <h2>Lola Young
+White Doll Print T-Shirt</h2>
+        <div class="product-item">
+            <img src="two.jpg" alt="Lola Young
+White Doll Print T-Shirt What Not To LP">
+            <h3>Lola Young</h3>
+            <p>White Doll Print T-Shirt</p>
+            <p class="price">$54</p>
+            <a href="twopayment.html"><button>PLACE ORDER</button></a>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> +31 35 79 942 24</p>
+        <p>Due to circumstances, we are currently not reachable by phone.</p>
+        <h3>Customer Service Hours:</h3>
+        <ul>
+            <li>Monday: 09:00 - 16:00</li>
+            <li>Tuesday: 09:00 - 16:00</li>
+            <li>Wednesday: 09:00 - 16:00</li>
+            <li>Thursday: 09:00 - 16:00</li>
+            <li>Friday: 09:00 - 16:00</li>
+            <li>Saturday: Closed</li>
+            <li>Sunday: Closed</li>
+        </ul>
+
+        <div class="social-media">
+            <a href="https://facebook.com/platenzaak.nl"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/@platenzaak_nl"><img src="youtube.jpg" alt="YouTube"></a>
+            <a href="https://www.instagram.com/platenzaak.nl/"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://tiktok.com/@platenzaak.nl"><img src="tiktok.jpg" alt="TikTok"></a>
+        </div>
+        <button class="trustpilot-btn">Rate us on ★ Trustpilot</button>
+        <form>
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">CONFIRM</button>
+        </form>
+    </section>
+
+<section id="award">
+        <img src="award.png" alt="Shopping Awards 2024 Bronze Public Prize DIY & Hobby" class="award-image">
+    </section>
+
+    <section id="payment">
+        <h2>Payment Methods</h2>
+        <div class="payment-methods">
+            <img src="apple.png" alt="Apple Pay">
+            <img src="google.png" alt="Google Pay">
+            <img src="ideal.png" alt="iDEAL">
+            <img src="mastercard.jpg" alt="Mastercard">
+            <img src="union.png" alt="UnionPay">
+            <img src="visa.png" alt="Visa">
+        </div>
+    </section>
+<br><br><br><br>
+
+    <footer>
+        <p>Copyright © 2025 Platenzaak.nl</p>
+    </footer>
+
+    <script>
+// Basic interactivity (e.g., form submission alert)
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Bedankt voor uw e-mail! We nemen zo snel mogelijk contact op.');
+});
+
+// Smooth scroll to sections
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+
+  
+        let currentIndex = 0;
+        const products = document.querySelector('.products');
+        const productWidth = 340; // Width of each product including margin
+
+        function moveLeft() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        }
+
+        function moveRight() {
+            if (currentIndex < 1) { // Only 2 moves possible (0, 1)
+                currentIndex++;
+                updateCarousel();
+            }
+        }
+
+        function updateCarousel() {
+            products.style.transform = `translateX(-${currentIndex * productWidth}px)`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platenzaak.nl</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #f4f4f4;
+    color: red;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.award-image {
+    max-width: 20%;
+    height: auto;
+    align-items: end;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payment-methods img {
+    height: 55px;
+    width: auto;
+    
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media img {
+    max-width: 30px;
+    margin: 0 5px;
+}
+
+.trustpilot-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 2px solid #800000;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .payment-methods {
+        flex-wrap: wrap;
+    }
+
+    .product-item {
+        max-width: 100%;
+    }
+}
+p{
+    text-align: justify;
+}
+</style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><div class="logo">💿 PLATENZAAK.NL</div></a>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#vinyl">All about vinyl</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p>
+        Vinyl records are analog sound storage mediums that have a rich history dating back to the late 19th century. 
+        <br>They are made from polyvinyl chloride (PVC) and are produced through a process that involves cutting grooves into a disc, which can then be played on a turntable. <br>
+Key aspects include:
+History: <br> Vinyl records evolved from earlier formats like shellac records and became popular in the mid-20th century, <br> experiencing a resurgence in recent years due to their unique sound quality and nostalgic appeal. <br>
+2
+Types: There are different types of vinyl records, including LPs (Long Play), EPs (Extended Play), and singles, each serving different purposes in music distribution. <br>
+1
+Collecting: Many enthusiasts collect vinyl records for their aesthetic value, sound quality, and the tangible experience they provide compared to digital formats. <br> Proper care and storage are essential for maintaining their condition. 
+2
+<br>
+For more detailed information, you can refer to the comprehensive guides available. 
+4
+    </p>
+    <br> <br> <br> <br> <br> <br>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> +31 35 79 942 24</p>
+        <p>Due to circumstances, we are currently not reachable by phone.</p>
+
+        <div class="social-media">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="youtube.jpg" alt="YouTube"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="tiktok.jpg" alt="TikTok"></a>
+        </div>
+        <button class="trustpilot-btn">Rate us on ★ Trustpilot</button>
+        <form>
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">CONFIRM</button>
+        </form>
+    </section>
+
+<section id="award">
+        <img src="award.png" alt="Shopping Awards 2024 Bronze Public Prize DIY & Hobby" class="award-image">
+    </section>
+
+    <section id="payment">
+        <h2>Payment Methods</h2>
+        <div class="payment-methods">
+            <img src="apple.png" alt="Apple Pay">
+            <img src="google.png" alt="Google Pay">
+            <img src="ideal.png" alt="iDEAL">
+            <img src="mastercard.jpg" alt="Mastercard">
+            <img src="union.png" alt="UnionPay">
+            <img src="visa.png" alt="Visa">
+        </div>
+    </section>
+<br><br><br><br>
+
+    <footer>
+        <p>Copyright © 2025 Platenzaak.nl</p>
+    </footer>
+</body>
+</html>

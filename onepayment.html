@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Address Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+form select, form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+form input:hover{
+    border: solid red;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+form label:last-of-type {
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+        <header>
+        <a href="index.html"><div class="logo">💿 PLATENZAAK.NL</div></a>
+        <nav>
+            <ul>
+                <li><a href="about.html">All about vinyl</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="shippingForm">
+            <label for="country">Country/Region</label>
+            <select id="country" name="country">
+                <option value="Belgium">Belgium</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Germany">Germany</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Italy">Italy</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Malta">Malta</option>
+                <option value="Netherlands">The Netherlands</option>
+                <option value="Austria">Austria</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Australia">Australia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+                <option value="South Korea">South Korea</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Russia">Russia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Norway">Norway</option>
+                <!-- Add more countries as needed -->
+            </select>
+
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="company">Company (optional)</label>
+            <input type="text" id="company" name="company">
+
+            <label for="street">Street name</label>
+            <input type="text" id="street" name="street" required>
+
+            <label for="houseNumber">House number</label>
+            <input type="text" id="houseNumber" name="houseNumber" required>
+
+            <label for="postalCode">Postal Code</label>
+            <input type="text" id="postalCode" name="postalCode" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label>
+                <input type="checkbox" id="saveInfo" name="saveInfo">
+                Save this information to checkout faster in the future
+            </label>
+
+
+                <div class="container1">
+        <h1>Order overview</h1>
+        <div class="order-item">
+            <span class="item-count">1</span>
+            <img src="one.jpg" alt="The Cranberries">
+            <div class="item-details">
+                <p>The Cranberries</p>
+                <p class="price">$113</p>
+            </div>
+        </div>
+
+        <div class="discount-section">
+            <label for="discountCode">Discount code</label>
+            <input type="text" id="discountCode" name="discountCode" placeholder="Enter code">
+            <button type="button" id="applyBtn">Apply</button>
+        </div>
+
+        <div class="summary">
+            <p>Subtotal <span>$113</span></p>
+            <p>Dispatch <span title="Enter shipping address">Shipping address</span></p>
+            <p>Total <span>USD $122</span></p>
+            <p class="vat">Including $9 VAT</p>
+        </div>
+
+        <button class="check-order-btn">Check order</button>
+
+        <div class="policies">
+            <a href="#">Refund Policy</a> |
+            <a href="#">Shipping Policy</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">General terms and conditions</a>
+        </div>
+    </div>
+        </form>
+    </div>
+
+        <footer>
+        <p>Copyright © 2025 Platenzaak.nl</p>
+    </footer>
+
+    <script> document.getElementById('shippingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Collect form data
+    const formData = {
+        country: document.getElementById('country').value,
+        firstName: document.getElementById('firstName').value,
+        surname: document.getElementById('surname').value,
+        company: document.getElementById('company').value,
+        street: document.getElementById('street').value,
+        houseNumber: document.getElementById('houseNumber').value,
+        postalCode: document.getElementById('postalCode').value,
+        city: document.getElementById('city').value,
+        phone: document.getElementById('phone').value,
+        saveInfo: document.getElementById('saveInfo').checked
+    };
+
+    // Simple validation
+    if (!formData.firstName || !formData.surname || !formData.street || !formData.houseNumber || !formData.postalCode || !formData.city) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+    // Display confirmation (in a real app, this would send data to a server)
+    alert('Shipping information submitted:\n' + JSON.stringify(formData, null, 2));
+    window.location.href = "https://hushpay.app/pay/685560ead4bf7";
+});
+</script>
+</body>
+</html>

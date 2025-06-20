@@ -1,0 +1,239 @@
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.container1 {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.item-count {
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.order-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.discount-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.discount-section label {
+    flex: 1;
+}
+
+.discount-section input {
+    flex: 2;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#applyBtn {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    width: 20%;
+    color: #000;
+}
+
+.summary p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.vat {
+    font-size: 12px;
+    color: #666;
+}
+
+.check-order-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.check-order-btn:hover {
+    background-color: #600000;
+}
+
+.policies {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #800000;
+}
+
+.policies a {
+    color: #800000;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+.policies a:hover {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .order-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .order-item img {
+        margin-bottom: 10px;
+    }
+
+    .discount-section {
+        flex-direction: column;
+    }
+
+    .discount-section input, #applyBtn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+header {
+    background-color: #f4f4f4;
+    color: red;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.award-image {
+    max-width: 20%;
+    height: auto;
+    align-items: end;
+}
+
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media img {
+    max-width: 30px;
+    margin: 0 5px;
+}
+
+.trustpilot-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .payment-methods {
+        flex-wrap: wrap;
+    }
+
+    .product-item {
+        max-width: 100%;
+    }
+}
